@@ -1,0 +1,6 @@
+// Output parameters should be passed in such a way that you can modify the arguments from inside the function. Options are passing by reference or by pointer.References are preferred in C++.
+
+
+
+// Input parameters shouldn't be modifiable from inside a function.The function really need to get input (read) from the arguments. You enforce modification restrictions with the const keyword, Options are passing by const refernce, passing by pointer to const, or even passing by const pointer to const.
+

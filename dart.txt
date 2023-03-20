@@ -1,0 +1,24 @@
+import 'dart:io';
+
+void main() {
+  print('Enter your age:');
+  int age = int.parse(stdin.readLineSync()!);
+
+  if (age >= 13 && age <= 19) {
+    print('You are a teenager');
+  } else {
+    print('You are not a teenager');
+  }
+}
+
+Explaination:
+
+The first line import 'dart:io'; imports the dart:io library, which provides functions for input and output.
+
+The main function is where the program begins. The print function is used to prompt the user to enter their age.
+
+The stdin.readLineSync() function reads the user's input from the console as a string. The int.parse() function is used to convert the string input to an integer.
+
+The if statement checks if the age is between 13 and 19 (inclusive) using the && operator to combine two conditions. If the condition is true, the program prints "You are a teenager" using the print function. Otherwise, it prints "You are not a teenager".
+
+The program terminates after printing the output.khj,dsfg.fvchikl;jxzfgdhiklsUZFhudszvldszfvbjkadfsvjlgadfskfghuadscfvhjluadscbjnvdszlcvbjxvbjlcxzvhijadsbhijklvasvbjladfsvxzchvlafxghfdvjl xzvhjghiludghlxz;vjn xzvjnkvzxkhjv dzligvzdhgvdzhlgiv; dfbvdfszluvdfzlvdfzhou;v dfvluadf; adfisulv hdfsvhilx;czv cxzilu vdfxzuvhl fxzvhul;adfsfdhjsuv adsfvadfshvadfsv;h dvh;izcv clv;h huvil;s vadhsl;ffgh a;v dshj;ov adsvs;vo iasvhs;vjk dfsv;hasv asv dasv adfs;vhadfsv dsv;jv asd vadfs;vahs v;vhfs va;svncs v;adschjvdfsa;glhs fgs;adfov o;fhg fhsd;hv shva; sfvnska;v avhnas ;svafd; svahs fgasfgua ;gaiufv as;vj va;vhj; a ;vas;hdk; lsdhao;sfiuf as nd;sa sifhajg; vhlasg ;fihafgs hsf;g avhioads;v ;hiouaefgshilou ;adfgshio;asegradios;f ihadfgsovio ;aghiou adg ijo;asdhijo ;ffaio;fsads;  io ;adhs;gioadsfo;afgu9iaweio;ewiopqeppq fpvxszdzlm,z,d l,aaklnmadsfgkol ;ae;f a lk;nvnz mc,szncv slnfkdajkf zmxmsz, l,aszkl;dsakol;akefslzdkszdkj ad iualzfdj lzmz,z..sllaeo;wo;qppowaeiopasdipea[oq[qosop[wiowopepwuejwlkf ddj;kodf few vncvmls mnvcvxzmn,z.vklvjfdfhaioszidaopsaspspooiapps0psaiug spgdfi fuvsdjvsdipodfgosuphjuyigfdsipuy9oertghiopuegqrhijo fdsvjklndfklmnsvxhjklfgehijopefgwijgrtewhjksdjklhfgrhjklsdfghijoukfgdshiopuert iu0pgdfsi opreghiuy pfsdgiu pdfsgihoupfg jko;gdfs;gdfs'fgdsilo gfweglp;johjx gfkdl hjkgdlsghfndfsgn dfpsfgvcx  ]]]

@@ -1,0 +1,37 @@
+                                            Pointers
+                                            
+
+Pass By Value
+1. the synatx feels natural
+2. Not recommended for relatively large types[user defined].
+3. Makes Copies : can waste memory if the parameter is of a large types.
+
+
+
+Pass By Reference
+1. Doesn't make copies 
+2. Changes to the parameter are reflected on the argument outside the scope of the function
+3. Saves feels like natural than passing by Value, but it's acceptable and it's feels well accepted within the c++ developer community
+
+
+Pass By Pointers
+1. The pointer address itself is passed by value 
+2. Can go through derefrencing the parameter and make the Changes reflect outside the scope of the function
+3. Avoids copies (a pointer is very cheap to copy)
+4. The synatx is very ugly : have to use pointer parameters, pass the address on the function call, and use the derefrence operator to apply modification to the value at pointed to address
+4. Although the syntax is ugly, this still used very widely in C++ code out in the world. 
+5. recommended for pass around large types (mostly user defined)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
