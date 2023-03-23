@@ -1,0 +1,8 @@
+
+                                  Global variables VS Static variables
+
+1. Both global and static variables have static storage duration. they live throughout the entire lifetime of the program.
+
+2. Static variables are scoped to the function in which they are declared and used. If you try to access them outside that function you'll get a compiler error.
+
+3. Global variablesare scoped to the global scope to the file where they are declared. They are accessible and usable through out the entire life.
