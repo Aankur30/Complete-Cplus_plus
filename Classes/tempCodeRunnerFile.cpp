@@ -1,0 +1,1 @@
+cout<<" sizeof(d1) = "<<sizeof(d1)<<endl;
