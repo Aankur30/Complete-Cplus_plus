@@ -1,0 +1,13 @@
+                Const Correctness
+
+1. For const objects you can obly call const member functions.
+
+2.Const objects are completely non-modifiable(immutable). The compiler won't allow calling a member function that modifies the const objects in any way
+
+3. We are not allowed to modify the object in any way inside const member function.
+
+4.Just as we're not allowed to directly modify the object inside a const member function, we're not allowed to cal a method that modifies the object indirectly either.
+
+5.Any attempt to modify an object's member variable(direct or indirectly) from within a const member functions will result in a compiler error
+
+6. You cannot call any non-const member function from within a const member function
