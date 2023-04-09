@@ -26,7 +26,7 @@ public:
         breed = breed_para;
     }
     void set_age(int age_para)
-    {
+    { 
         age = age_para;
     }
     void print_info()
