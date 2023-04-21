@@ -12,7 +12,7 @@ namespace level1
 }
 int main()
 {
-    namespace data = level1::level2::level3;//alias for the nested namespaces
+    namespace data = level1::level2::level3; // alias for the nested namespaces
     cout << "the weight is " << level1::level2::level3::weight << endl;
     cout << "the weight is " << data::weight << endl;
     return 0;
