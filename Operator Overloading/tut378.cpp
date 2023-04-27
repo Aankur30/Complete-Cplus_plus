@@ -20,7 +20,7 @@ void do_something(print &p1)
 int main()
 {
     print p1;
-    cout<<"The use of the function call operator()"<<endl;
+    cout << "The use of the function call operator()" << endl;
     p1("Naruto Uzumaki");
     cout << "the full name is:" << p1("Madara", "Uchiha") << endl;
     return 0;
