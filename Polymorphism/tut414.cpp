@@ -55,37 +55,38 @@ public:
         cout << "circle::draw() called : " << m_description << " with radius  : " << get_x_radius() << endl;
     }
 };
-void shape_draw(shape *s){
-s->draw();
+void shape_draw(shape *s)
+{
+    s->draw();
 }
-int main(){
+int main()
+{
     shape s1("shape1");
-    oval o1(2.0,30,"oval1");
-    circle c1(30,"circle1");
+    oval o1(2.0, 30, "oval1");
+    circle c1(30, "circle1");
 
+    cout << "Polymorphism with dynamic binding with reference " << endl;
+    // only virtual methods can be called this way using the pointer and the arrow operator non-virtual methods will give the errorgit
+    shape *shape_ptr = &s1;
+    shape_ptr->draw(); // expcted shape draw will be called
 
-    cout<<"Polymorphism with dynamic binding with reference "<<endl;
-// only virtual methods can be called this way using the pointer and the arrow operator non-virtual methods will give the errorgit 
-    shape *shape_ptr=&s1;
-    shape_ptr->draw();//expcted shape draw will be called 
+    shape_ptr = &o1;
+    shape_ptr->draw(); // oval draw will be called
 
-     shape_ptr=&o1;
-    shape_ptr->draw();//oval draw will be called
+    shape_ptr = &c1;
+    shape_ptr->draw(); // circle draw will be called
+    // by applying the virtual now the pointer will not looking the type of pointer whereas it will look to the object type assigned to the pointer
+    cout << "----------------------------------" << endl;
 
-    shape_ptr=&c1;
-    shape_ptr->draw();//circle draw will be called
-    //by applying the virtual now the pointer will not looking the type of pointer whereas it will look to the object type assigned to the pointer
- cout<<"----------------------------------"<<endl;
+    // using teh base references
+    shape &shape_ref = c1;
+    shape_ref.draw();
 
-//using teh base references
-shape& shape_ref=c1;
-shape_ref.draw();
+    shape &ref = o1;
+    ref.draw();
+    cout << "----" << endl;
 
-shape & ref =o1;
-ref.draw();
-cout<<"----"<<endl;
- 
- shape_draw(&o1);
+    shape_draw(&o1);
 
     return 0;
 }
