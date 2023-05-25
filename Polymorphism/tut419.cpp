@@ -86,8 +86,6 @@ public:
         std::cout << "Dog::breathe called for : " << m_description << std::endl;
     }
 
-
-
     virtual void run() const override
     {
         std::cout << "Dog " << m_description << " is running" << std::endl;
