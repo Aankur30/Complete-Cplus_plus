@@ -18,7 +18,8 @@
                     "${workspaceFolder}/**"
                 ],
                 "limitSymbolsToIncludedHeaders": true
-            }
+            },
+            "compilerPath": "C:/msys64/mingw64/bin/gcc.exe"
         },
         {
             "name": "C:\\MinGW\\bin",
