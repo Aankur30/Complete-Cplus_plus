@@ -26,10 +26,10 @@ class square
 public:
     square(double side_para)
         : square(side_para, 3, 303.0) // can;t do furthur intialization of the position before and after here but can be done in the body
-//  : square(side_para, 3, 303.0) position(0.0) gives the error
-//  : position(0.0) square(side_para, 3, 303.0) gives the error cannot be done before and after in the list
+                                      //  : square(side_para, 3, 303.0) position(0.0) gives the error
+                                      //  : position(0.0) square(side_para, 3, 303.0) gives the error cannot be done before and after in the list
 
-    {                                                     // here compiler is using 3 parameter constructor first and then 1 parameter constructor
+    { // here compiler is using 3 parameter constructor first and then 1 parameter constructor
         // square(side_para, 3, 303.0); // it is not doing the constructor deligation it is simply making the another object can be verified through the invoking of the destructor
         cout << "constructor with one parameter " << endl;
         position = 0.0; // allowed by the compiler

@@ -12,9 +12,9 @@ int main()
     // And
     cout << " Bitwise AND " << endl;
     cout << setw(column) << " value1 & value2 : " << setw(column) << bitset<8>(value1 & value2) << endl;
-     cout << " Bitwise OR " << endl;
+    cout << " Bitwise OR " << endl;
     cout << setw(column) << " value1 | value2 : " << setw(column) << bitset<8>(value1 | value2) << endl;
-     cout << " Bitwise NOR " << endl;
+    cout << " Bitwise NOR " << endl;
     cout << setw(column) << " value1 ^ value2 : " << setw(column) << bitset<8>(value1 ^ value2) << endl;
     return 0;
 }

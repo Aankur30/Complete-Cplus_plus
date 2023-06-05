@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-#include<cassert>
+#include <cassert>
 using namespace std;
 class point
 {
@@ -23,8 +23,8 @@ public:
     }
     double operator[](size_t index) const
     {
-       assert((index==0)||(index==1));
-        return (index == 0) ? x : y; 
+        assert((index == 0) || (index == 1));
+        return (index == 0) ? x : y;
     }
     ~point()
     { // const keywword are not allowed with constructor or destructor

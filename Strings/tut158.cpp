@@ -24,12 +24,12 @@ int main()
     str1 = "people say sky is the limit, but i have seen  steps on the moon";
     cout << "the capacity is : " << str1.capacity() << endl;
     str1.reserve(100);
-    cout << "the capacity after reserve is : " << str1.capacity() << endl;//126
+    cout << "the capacity after reserve is : " << str1.capacity() << endl; // 126
     cout << "string is : " << str1 << endl;
-    str1="this string is to check the string fit function";
-    cout<<" the new capacity is : "<<str1.capacity()<<endl;
+    str1 = "this string is to check the string fit function";
+    cout << " the new capacity is : " << str1.capacity() << endl;
     str1.shrink_to_fit();
-    cout<<" after applying the method over the string :"<<str1.capacity()<<endl;
+    cout << " after applying the method over the string :" << str1.capacity() << endl;
 
     return 0;
 } // size and length method gives the same result

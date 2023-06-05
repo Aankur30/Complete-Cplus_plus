@@ -13,7 +13,7 @@ int main()
 template <typename T>
 const T &maximum(const T &a, const T &b)
 {
-    cout << "the address of the a in the function is: " << &a << endl;//both will have the same address as it is refernced 
+    cout << "the address of the a in the function is: " << &a << endl; // both will have the same address as it is refernced
     return (a > b) ? a : b;
 }
 /*

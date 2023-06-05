@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-#include <math.h>
+#include <cmath>
 
 class cylinder
 {
@@ -32,12 +32,12 @@ int main()
     cylinder c3;
     cout << "the volume of the c3 is :" << c3.volume() << endl;
     cylinder *c4 = new cylinder(12, 23);
-    cout << "the volume is : " << (*c4).volume()<<endl;
+    cout << "the volume is : " << (*c4).volume() << endl;
     cout << endl
-         << "the volume using the arrow notation is :" << c4->volume()<<endl;
+         << "the volume using the arrow notation is :" << c4->volume() << endl;
     delete c4;
     cylinder *c5 = &C1;
-    cout << "the volume is " << c5->volume()<<endl;
+    cout << "the volume is " << c5->volume() << endl;
     cout << "sizeof(c5) is : " << sizeof(c5) << endl; // hence it is a pointer so it size should be of 8 bytes
     cout << "the value of c5 is :" << c5 << endl;
     cout << "the sizeof(C1) : " << sizeof(C1) << endl; // size of C1 is 16 bytes;

@@ -27,9 +27,9 @@ int main()
     cout << "the volume  of C1 is :" << C1.volume() << endl;
     c2.base_radius = 3.0;
     c2.height = 5;
-    cout << "the volume of the c2 is :" << c2.volume()<<endl;
+    cout << "the volume of the c2 is :" << c2.volume() << endl;
     cylinder c3;
-    cout<<"the volume of the c3 is :"<<c3.volume();
+    cout << "the volume of the c3 is :" << c3.volume();
 
     return 0;
 }

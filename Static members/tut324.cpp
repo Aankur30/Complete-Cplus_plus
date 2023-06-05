@@ -16,8 +16,8 @@ public:
     static size_t point_info()
     { // const is not allowed to write with the static methods
         return m_point_count;
-    } // static function can only return the static member variables and do not have the access to the other members of the class
-    static void display(const point &p) //without static we cannot do this 
+    }                                   // static function can only return the static member variables and do not have the access to the other members of the class
+    static void display(const point &p) // without static we cannot do this
     {
         cout << "[x is = " << p.m_x << " "
              << "y is = " << p.m_y << "]" << endl;

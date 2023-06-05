@@ -62,10 +62,11 @@ int main()
     // ellipse
     ellipse e1(12, 13, "ellipse1");
     cout << "shape count: " << shape::int_count << endl;
-    cout << "Ellipse count: " << ellipse::int_count << endl; //this is also giving the value 3 but as there is only one ellipse so we should get 1 as answer for this we have to make seperate static variable for the ellipse class
-  shape *shapes[]{&s1,&e1};
-  for( auto &shapes1:shapes){
-    cout<<shapes1->get_count() << endl;
-  }
+    cout << "Ellipse count: " << ellipse::int_count << endl; // this is also giving the value 3 but as there is only one ellipse so we should get 1 as answer for this we have to make seperate static variable for the ellipse class
+    shape *shapes[]{&s1, &e1};
+    for (auto &shapes1 : shapes)
+    {
+        cout << shapes1->get_count() << endl;
+    }
     return 0;
 }

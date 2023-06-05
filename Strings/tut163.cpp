@@ -1,5 +1,5 @@
 #include <iostream>
-#include <string> 
+#include <string>
 using namespace std;
 int main()
 {
@@ -10,7 +10,7 @@ int main()
     string search{'z'};
     cout << "On searching : " << str1.find(search) << endl; //
     cout << "string::npos : " << string::npos << endl;
-    size_t i=-1;
-    cout<<" i : "<<i<<endl; //compiler error 
+    size_t i = -1;
+    cout << " i : " << i << endl; // compiler error
     return 0;
 }

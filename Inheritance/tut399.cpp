@@ -36,37 +36,37 @@ public:
         cout << " Name is : " << last_name << " " << first_name << endl;
     }
 };
-    ostream &operator<<(ostream &os, const person &p)
-    {
-        os << p.first_name << " " << p.last_name << endl;
-        return os;
-    }
-    class player : public person
-    {
-        friend ostream &operator<<(ostream &out, const player &player1);
+ostream &operator<<(ostream &os, const person &p)
+{
+    os << p.first_name << " " << p.last_name << endl;
+    return os;
+}
+class player : public person
+{
+    friend ostream &operator<<(ostream &out, const player &player1);
 
-    public:
-        player() = default;
-        player(string_view game_para) : m_game{game_para} {}
-        ~player() = default;
+public:
+    player() = default;
+    player(string_view game_para) : m_game{game_para} {}
+    ~player() = default;
 
-    private:
-        string m_game{"PUBG"};
-    };
-    inline ostream &operator<<(ostream &out, const player &player1)
-    {
-        out << player1.get_first_name() << " " << player1.get_last_name() << "\n"
-            << "---Game is :--- " << player1.m_game << endl;
-        return out;
-    }
+private:
+    string m_game{"PUBG"};
+};
+inline ostream &operator<<(ostream &out, const player &player1)
+{
+    out << player1.get_first_name() << " " << player1.get_last_name() << "\n"
+        << "---Game is :--- " << player1.m_game << endl;
+    return out;
+}
 
-    int main()
-    {
-        player p1{" basketball "};
-        cout << "player 1 : " << p1 << endl;
-        p1.set_first_name("Madara");
-        p1.set_last_name("Uchiha");
-        p1.display_info();
+int main()
+{
+    player p1{" basketball "};
+    cout << "player 1 : " << p1 << endl;
+    p1.set_first_name("Madara");
+    p1.set_last_name("Uchiha");
+    p1.display_info();
 
-        return 0;
-    }
+    return 0;
+}

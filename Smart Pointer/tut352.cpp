@@ -33,7 +33,7 @@ private:
 int main()
 {
     // Array allocated in the stack
-            cout
+    cout
         << "Working with dog array on the stack " << endl;
     dog dog_array[3]{dog{"dog1"}, dog{"dog2"}, dog{"dog3"}};
     for (size_t i = 0; i < 3; i++)

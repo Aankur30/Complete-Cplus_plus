@@ -19,7 +19,8 @@ enum months
 };
 string_view month_to_string(months m)
 {
-    switch (m){
+    switch (m)
+    {
     case months::jan:
         return "January";
         break;
@@ -30,8 +31,9 @@ string_view month_to_string(months m)
         return "none";
     }
 }
-int main(){
-    months m{months::feb };
+int main()
+{
+    months m{months::feb};
     cout << "months : " << month_to_string(m) << endl;
     return 0;
 }

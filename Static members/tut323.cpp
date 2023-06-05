@@ -34,12 +34,12 @@ public:
     static integer i6;
     static const integer i7;
 };
-  point::point(double x, double y) : m_x(x), m_y(y),p_i5(new integer(5))//point constructor calling integer constructor
-    {
-        ++m_point_count;
-        cout << "this is the constructor for the point class" << endl;
-    }
-     size_t point:: m_point_count{0};
+point::point(double x, double y) : m_x(x), m_y(y), p_i5(new integer(5)) // point constructor calling integer constructor
+{
+    ++m_point_count;
+    cout << "this is the constructor for the point class" << endl;
+}
+size_t point::m_point_count{0};
 int main()
 {
 

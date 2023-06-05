@@ -8,7 +8,7 @@ struct point
 int main()
 {
     point p1{23.3, 34.4};
-    //assign x to a and y to b
+    // assign x to a and y to b
     auto [a, b] = p1; // order is important only works when members are public
     cout << " a : " << a << endl;
     cout << " b : " << b << endl;

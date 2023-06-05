@@ -55,7 +55,7 @@ void dog::print_info() const
 {
     cout << "the name of the dog is " << this->name << endl;
     cout << "the name of the breed is " << this->breed << endl;
-    cout << "the age of the dog is " << this->age<<endl;
+    cout << "the age of the dog is " << this->age << endl;
 }
 int main()
 {

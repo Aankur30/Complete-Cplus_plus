@@ -24,7 +24,7 @@ int main()
     if (ptr3)
     { // only work when the pointer is not null
         for (size_t i{}; i < size; ++i)
-            cout << "value : " << ptr3[i] << " : " << *(ptr3 + i) << endl;//this piece of code will not work
+            cout << "value : " << ptr3[i] << " : " << *(ptr3 + i) << endl; // this piece of code will not work
     }
     return 0;
 }

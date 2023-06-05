@@ -12,8 +12,8 @@ void print(long int age = 44)
 }
 int main()
 {
-    // print();ambigious overloading 
-     long int age=34;
+    // print();ambigious overloading
+    long int age = 34;
     print(age);
     return 0;
 }

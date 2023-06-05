@@ -58,8 +58,9 @@ public:
 private:
     int contract_count{0};
 };
-ostream &operator<<(ostream &out, const engineer &operand){
-    
+ostream &operator<<(ostream &out, const engineer &operand)
+{
+
     return out;
 }
 int main()

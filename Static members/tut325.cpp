@@ -33,7 +33,7 @@ public:
     public:
         double get_double() const
         {
-            cout << "the value of the static outer variable : " << static_int << endl;//can access the static member  of the outer class
+            cout << "the value of the static outer variable : " << static_int << endl; // can access the static member  of the outer class
             return inner_var1;
         }
         inner(double var1) : inner_var1{var1}

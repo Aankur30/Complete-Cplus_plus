@@ -13,7 +13,7 @@ int main()
     int in1 = stoi(str2);
     cout << " str1 : " << in1 << endl;
     cout << " size of f1 : " << sizeof(str2) << endl;
-    cout << "size of str1\" :"<< sizeof(in1) << endl;
+    cout << "size of str1\" :" << sizeof(in1) << endl;
 
     return 0;
 }

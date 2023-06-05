@@ -6,7 +6,7 @@ int main()
     auto x = var;
     cout << "sizeof(var) : " << sizeof(var) << endl;
     cout << "sizeof(x) : " << sizeof(x) << endl;
-    cout << "&var : " << &var << endl; 
+    cout << "&var : " << &var << endl;
     cout << "&x  :" << &x << endl;
 
     // naked auto refrence deduction

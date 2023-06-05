@@ -3,17 +3,17 @@ using namespace std;
 int main()
 {
     bool go{false};
-    if(int speed{33};go)
+    if (int speed{33}; go)
     {
-        if(speed>5)
-        cout<<"Slow Down !"<<endl;
+        if (speed > 5)
+            cout << "Slow Down !" << endl;
         else
-        cout<<"All good"<<endl;
+            cout << "All good" << endl;
     }
     else
     {
-        cout<<"high speed : "<<speed<<endl;
-        cout<<"Stop"<<endl;
+        cout << "high speed : " << speed << endl;
+        cout << "Stop" << endl;
     }
     return 0;
-    }
+}

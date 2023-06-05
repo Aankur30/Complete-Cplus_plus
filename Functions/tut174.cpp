@@ -1,7 +1,7 @@
 #include <iostream>
-//Pass by value function
+// Pass by value function
 using namespace std;
-int max(int a, int b); //formal arguments or parameter//function protoype or definition
+int max(int a, int b); // formal arguments or parameter//function protoype or definition
 int main()
 {
     cout << "Comparing two numbers " << endl;
@@ -10,11 +10,11 @@ int main()
     cin >> a;
     cout << "Input number 2: ";
     cin >> b;
-    int num = max(a, b);//actual arguments
+    int num = max(a, b); // actual arguments
     cout << "maximum number is : " << num << endl;
     return 0;
 }
-int max(int a, int b)//function definition
+int max(int a, int b) // function definition
 {
     if (a > b)
         return a;

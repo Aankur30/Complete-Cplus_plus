@@ -3,7 +3,7 @@ using namespace std;
 
 namespace no_weight
 {
-    double add(double x, double y)//by doing so the compiler will not give the error of redefinition of function 
+    double add(double x, double y) // by doing so the compiler will not give the error of redefinition of function
     {
         return x + y;
     }

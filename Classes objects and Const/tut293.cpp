@@ -8,7 +8,7 @@ private:
     string breed;
     int age;
     mutable size_t info_count{0}; // this will voilate the const correctness inside the code even in the const member functions by putting the mutable keyword
-    //NOT RECOMMENDED as it will make the code less understandable rarely used
+    // NOT RECOMMENDED as it will make the code less understandable rarely used
 
 public:
     dog() = default;

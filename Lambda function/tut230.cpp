@@ -7,7 +7,7 @@ int main()
     {
         cout << "hello world " << endl;
     };
-     func();
+    func();
     cout << "size of the func : " << sizeof(func) << endl;
 
     cout << "----------------------" << endl;
@@ -38,19 +38,19 @@ int main()
     {
         return a + b;
     }(23.3, 334.5);
-    //using variable to return the value from the function
-     auto result=[](double a, double b)
+    // using variable to return the value from the function
+    auto result = [](double a, double b)
     {
         return a + b;
     }(23.3, 334.5);
-    cout<<"the value of the result is  : "<<result<<endl;
-    cout<<"------------------"<<endl;
-    cout<<"Explicitly specify the return type "<<endl;
-     auto rresult2=[](double a, double b)->int
+    cout << "the value of the result is  : " << result << endl;
+    cout << "------------------" << endl;
+    cout << "Explicitly specify the return type " << endl;
+    auto rresult2 = [](double a, double b) -> int
     {
         return a + b;
     }(23.3, 334.5);
-    cout<<"the reslut of the sum is : "<<rresult2<<endl;
+    cout << "the reslut of the sum is : " << rresult2 << endl;
 
     return 0;
 }

@@ -19,18 +19,30 @@
                 ],
                 "limitSymbolsToIncludedHeaders": true
             },
-            "compilerPath": "C:/msys64/mingw64/bin/gcc.exe"
+            "compilerPath": "C:/msys64/mingw64/bin/cpp.exe"
         },
         {
             "name": "C:\\MinGW\\bin",
             "includePath": [
-                "${workspaceFolder}/**"
+                "d:\\SKILLS\\Complete C++/**"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
-            ]
+            ],
+            "macFrameworkPath": [],
+            "cStandard": "c23",
+            "cppStandard": "c++23",
+            "intelliSenseMode": "windows-gcc-x86",
+            "mergeConfigurations": false,
+            "compilerPath": "C:/msys64/mingw64/bin/gcc.exe",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
         }
     ],
     "version": 4

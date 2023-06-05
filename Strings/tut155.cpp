@@ -14,7 +14,7 @@ int main()
     cout << "planet : " << planet << endl;
     cout << "duplicate : " << duplicate << endl;
     cout << "slicing : " << slicing << endl;
-    cout << "repeat : " << repeat << endl;//not supporting should give eeee as output
+    cout << "repeat : " << repeat << endl; // not supporting should give eeee as output
     cout << "greetings : " << greetings << endl;
     cout << "advanced : " << advanced << endl;
     return 0;

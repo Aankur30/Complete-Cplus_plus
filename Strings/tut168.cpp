@@ -38,7 +38,7 @@ int main()
 
     sv.remove_suffix(6);
     cout << " sv : " << sv << endl;
-    cout<<" s : "<<s<<endl;
+    cout << " s : " << s << endl;
 
     return 0;
 }

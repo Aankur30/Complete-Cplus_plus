@@ -7,7 +7,6 @@ int main()
     cout << "the value of this hex value in binary = " << bitset<16>(data) << endl
          << "the decimal value is = " << dec << data << endl;
 
-
     // shifting to the right
     data = static_cast<unsigned short int>(data >> 1);
 
@@ -15,7 +14,6 @@ int main()
     cout << "value when shifted to right = " << data << endl;
     cout << "the value of this hex value in binary = " << bitset<16>(data) << endl;
     cout << "the decimal value is = " << dec << data << endl;
-
 
     // shifting to the left
     data = static_cast<unsigned short int>(data << 2);

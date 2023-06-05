@@ -13,10 +13,10 @@ int main()
         cout << "+ , - , * , / are suppoerted operations . Please choose one and type below" << endl;
         cout << "your operation" << endl;
         cin >> operation;
-        if((operation!='+')&&(operation!='-')&&(operation!='/')&&(operation!='*'))
+        if ((operation != '+') && (operation != '-') && (operation != '/') && (operation != '*'))
         {
-        cout<<"Not Supported this "<<operation<< " operation"<<endl;
-        break;
+            cout << "Not Supported this " << operation << " operation" << endl;
+            break;
         }
         cout << endl;
         cout << "Please type your two operands " << endl;

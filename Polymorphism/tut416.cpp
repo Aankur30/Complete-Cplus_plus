@@ -1,5 +1,5 @@
 #include <iostream>
-#include<memory>
+#include <memory>
 using namespace std;
 
 class shape
@@ -80,8 +80,8 @@ int main()
     //  const shape& s2[]{c1, o1, c2, o2, c3, o3};//this is not going to work because the reference are not left assignable
 
     // what if we store in raw pointers
-    cout<<"--------------------------------"<<endl;
-    cout<<"Stored in the raw pointers "<<endl;
+    cout << "--------------------------------" << endl;
+    cout << "Stored in the raw pointers " << endl;
     shape *s3[]{&c1, &o1, &c2, &o2, &c3, &o3};
     //    this will work
     for (shape *shape_pointer : s3)
@@ -92,14 +92,14 @@ int main()
     }
     // no slicing takes place works just fine
 
-    cout<<"------------------------"<<endl;
-    cout<<"working with smart pointers..."<<endl;
-    shared_ptr<shape> shape4[]{make_shared<circle>(12.2,"circles0"),make_shared<oval>(12,34,"oval0")};
-    for(auto s:shape4)
+    cout << "------------------------" << endl;
+    cout << "working with smart pointers..." << endl;
+    shared_ptr<shape> shape4[]{make_shared<circle>(12.2, "circles0"), make_shared<oval>(12, 34, "oval0")};
+    for (auto s : shape4)
     {
         s->draw();
     }
-    // it also works with the smart pointers as well 
+    // it also works with the smart pointers as well
 
     return 0;
 }

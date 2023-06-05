@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <compare>
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()
@@ -22,17 +22,16 @@ int main()
     }
     else
         cout << "m1 < m2" << endl;
-    //Three way comparison operators:Spaceship operator
+    // Three way comparison operators:Spaceship operator
     auto res = (n1 <=> n2);
     cout << boolalpha;
-    cout << "result= (n1<=>n2): " << ((n1 <=> n2) >  0) << endl;
+    cout << "result= (n1<=>n2): " << ((n1 <=> n2) > 0) << endl;
     cout << "result= (n1<=>n2): " << ((n1 <=> n2) >= 0) << endl;
     cout << "result= (n1<=>n2): " << ((n1 <=> n2) == 0) << endl;
     cout << "result= (n1<=>n2): " << ((n1 <=> n2) <= 0) << endl;
-    cout << "result= (n1<=>n2): " << ((n1 <=> n2) <  0) << endl;
+    cout << "result= (n1<=>n2): " << ((n1 <=> n2) < 0) << endl;
     cout << "result= (n1<=>n2): " << ((n1 <=> n2) != 0) << endl;
-    //spaceship operator is not working in this compiler version
-    
+    // spaceship operator is not working in this compiler version
 
     return 0;
 }

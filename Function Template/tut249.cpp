@@ -10,7 +10,7 @@ int main()
     cout << "maximum(int) : " << maximum(a, b) << endl;
     cout << "maximum(double) : " << maximum(c, d) << endl;
     cout << "maximum(string) : " << maximum(e, f) << endl;
-    cout<<"----Explicity declared using the template----"<<endl; 
+    cout << "----Explicity declared using the template----" << endl;
     maximum<double>(c, d);
     maximum<double>(a, c);
     // maximum<double>(a,e);

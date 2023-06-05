@@ -20,7 +20,7 @@ int main()
     // no throw mechanism
     for (size_t i{}; i < 100; ++i)
     {
-        int *data = new (nothrow) int[1000000000000];
+        int *data = new (nothrow) int[10000000000];
         if (data != nullptr)
         {
             cout << "Data allocated Successfully" << endl;

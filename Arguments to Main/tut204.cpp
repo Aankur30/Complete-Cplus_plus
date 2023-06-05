@@ -15,7 +15,7 @@ int main(int argc, char **argv)
     }
     cout << endl;
     // at argv[0]- there will always be the name of the program stored
-    double first(atof(argv[1])); 
+    double first(atof(argv[1]));
     double Second(atof(argv[3]));
     if (first == 0.00 || Second == 0.00)
         cout << "Please enter valid numbers" << endl;

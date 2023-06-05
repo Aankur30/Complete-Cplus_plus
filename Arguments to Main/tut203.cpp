@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-//calculator 
+// calculator
 int main(int argc, char **argv)
 {
     double first{12.3};

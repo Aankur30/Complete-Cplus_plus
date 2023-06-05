@@ -1,25 +1,25 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
     int a{0};
-    switch(a)
+    switch (a)
     {
         int x;
-        case 0:
+    case 0:
         int y;
-        x=4;
+        x = 4;
         x++;
         break;
-        case 1:
+    case 1:
         int z;
-        y=5;
-        y+=5;
+        y = 5;
+        y += 5;
         break;
-        default:
+    default:
         int u;
-        z=4;
+        z = 4;
         z++;
-        break;//optional but good pratice
+        break; // optional but good pratice
     }
 }

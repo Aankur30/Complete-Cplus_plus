@@ -26,7 +26,7 @@ public:
         breed = breed_para;
     }
     void set_age(int age_para)
-    { 
+    {
         age = age_para;
     }
     void print_info()
@@ -53,9 +53,9 @@ void const_function_ref(const dog &dog_ref)
 }
 // Pointer to non const as parameters it will get an error of invalid conversion of const to non const
 
-//Parameter passed as pointer to const it will compile if we are not doing anything in the body
- // dog_ref.set_name("mEE Chain");//Expected error as we are modifying the object
-    // dog_ref.print_info();// Not Expected not allowing us to read the data also
+// Parameter passed as pointer to const it will compile if we are not doing anything in the body
+//  dog_ref.set_name("mEE Chain");//Expected error as we are modifying the object
+//  dog_ref.print_info();// Not Expected not allowing us to read the data also
 int main()
 {
     const dog d1{"flatcher", "Shephard", 3};

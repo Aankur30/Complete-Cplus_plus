@@ -15,7 +15,6 @@ public:
     person(const string &last_para, const string &first_para) : person(last_para, first_para, 0) {}
     person(const string &last_para) : person(last_para, "") {}
 
-
     // copy constructor
     //  person(const person source_person):last_name(source_person.getlast_name()),first_name(source_person.getfirst_name()),age(new int(*source_person.get_age()){}//BAD : Poitential for an endless chain of copy constructor
 
@@ -33,7 +32,7 @@ public:
 
     ~person() {}
     // getter function
-    
+
     const string getfirst_name() const
     {
         return first_name;

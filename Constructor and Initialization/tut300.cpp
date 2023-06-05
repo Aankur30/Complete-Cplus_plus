@@ -10,8 +10,8 @@ class square
 public:
     // error in the constructor having default parameter
     //  explicit  square(double side_para,string& name_para="Serious" ):side{side_para},name{name_para}{
-    explicit square(double side_para, string name_para = "Serious") : side(side_para), name{name_para}//we can use curely bracces and round braces both as in intilializer lists
-    { // on removing the &sign makes it a copy not by reference
+    explicit square(double side_para, string name_para = "Serious") : side(side_para), name{name_para} // we can use curely bracces and round braces both as in intilializer lists
+    {                                                                                                  // on removing the &sign makes it a copy not by reference
     }
     double surface() const
     {
