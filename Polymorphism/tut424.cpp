@@ -45,4 +45,16 @@ private:
         cout << "ellipse::draw() called with " << m_descrption << endl;
     }
 };
-int main() {}
+int main()
+{
+    shared_ptr<shape> shape0 = make_shared<ellipse>(1, 3, "Ellipse1");
+    shape0->draw();
+    // shape0->func(); error:func is private in shape
+
+    // func is inherited from shape and made public in ellipse class
+    ellipse ellipse1(1, 600, "Ellipse1");
+    ellipse1.func();
+    // ellipse1.draw(); draw is private in ellipse -static binding
+    shape shape3 = ellipse(2, 3, "Ellipse3");
+    shape3.draw();
+}
