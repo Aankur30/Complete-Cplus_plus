@@ -66,4 +66,3 @@ int main()
     Animal *animal1 = new Dog("dark grey", "animal1");
     delete animal1;
 }
- 

@@ -76,11 +76,11 @@ int main()
 
     cout << "--------------------------------" << endl;
 
-    Dog *dog_ptr = dynamic_cast<Dog *>(animal1);//cannot cast into dog pointer because it does not contain any dog information
+    Dog *dog_ptr = dynamic_cast<Dog *>(animal1); // cannot cast into dog pointer because it does not contain any dog information
     if (dog_ptr)
         dog_ptr->bark();
     else
         cout << "Couldn't cast to Dog pointer, Sorry!!" << endl;
+    Feline &feline_ref = dynamic_cast<Feline &>(animal_ref);
     return 0;
-    Feline & feline_ref= dynamic_cast<Feline *>(&animal_ref);
 }
