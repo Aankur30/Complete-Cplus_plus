@@ -15,7 +15,7 @@ class TemplateClass
 public:
     explicit TemplateClass<T>()
     {
-    }
+    } 
     void set_up(T param)
     {
         m_var = param;
