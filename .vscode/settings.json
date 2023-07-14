@@ -1,8 +1,24 @@
 {
     "files.associations": {
+        "*.c": "c",
         "string_view": "cpp",
         "iostream": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "array": "cpp",
+        "atomic": "cpp",
+        "cwchar": "cpp",
+        "string": "cpp",
+        "vector": "cpp",
+        "exception": "cpp",
+        "initializer_list": "cpp",
+        "iosfwd": "cpp",
+        "istream": "cpp",
+        "new": "cpp",
+        "stdexcept": "cpp",
+        "streambuf": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "*.tcc": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabledIfIncludesResolve",
     "better-comments.multilineComments": true,
