@@ -1,6 +1,6 @@
 #include <iostream>
 #include <forward_list>
-#include<algorithm>
+#include <algorithm>
 using namespace std;
 template <typename T>
 void print_collection(const T &collection)
@@ -172,7 +172,7 @@ int main()
     cout << " numbers2 : ";
     print_collection(numbers2);
 
-    numbers1.splice_after(numbers1.before_begin(), numbers2, numbers2.before_begin(), numbers2.cend());//first argument is destination then source then from source range where to start and where to end   
+    numbers1.splice_after(numbers1.before_begin(), numbers2, numbers2.before_begin(), numbers2.cend()); // first argument is destination then source then from source range where to start and where to end
 
     cout << " numbers1 : ";
     print_collection(numbers1);
