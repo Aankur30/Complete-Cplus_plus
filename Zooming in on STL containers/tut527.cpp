@@ -54,7 +54,7 @@ void print_priority_queue(std::priority_queue<T, Container, Compare> p_queue)
 template <typename T,
           typename Container = std::vector<T>,
           typename Compare = std::less<typename Container::value_type>>
-void clear_queue(std::priority_queue<T, Container, Compare> p_queue)
+void clear_queue(std::priority_queue<T, Container, Compare>&p_queue)
 {
 
     std::cout << "Clearing priority queue of size : " << p_queue.size() << std::endl;
@@ -68,7 +68,7 @@ int main()
 {
 
     // Code1 : Creating  pushing and accessing
-    std::priority_queue<int> numbers1; // The greatest has higher priority
+    std::priority_queue<int> numbers1; // The greatest has   priority
 
     std::cout << " numbers1 : ";
     print_priority_queue(numbers1);
@@ -109,7 +109,7 @@ int main()
     std::cout << " numbers1 : ";
     print_priority_queue(numbers1);
 
-    numbers1.pop();
+    numbers1.pop(); // hightest priority element should be poped first
 
     std::cout << " numbers1 : ";
     print_priority_queue(numbers1);
