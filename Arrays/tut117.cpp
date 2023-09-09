@@ -8,7 +8,7 @@ int main()
 
     int number = rand(); // genertates number between RAND_MAX and 0
     cout << "number is = " << number << endl;
-    cout << "RAND_MAX = " << RAND_MAX << endl;
+    cout << "RAND_MAX = " << RAND_MAX << endl;//to get the maximum number till where randomization is possible
     cout << "-----------------Random number between the range------------------" << endl;
     int num = rand() % 11;
     cout << "number is =" << num << endl;
