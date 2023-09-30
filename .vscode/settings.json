@@ -18,7 +18,8 @@
         "streambuf": "cpp",
         "tuple": "cpp",
         "type_traits": "cpp",
-        "*.tcc": "cpp"
+        "*.tcc": "cpp",
+        "iomanip": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabledIfIncludesResolve",
     "better-comments.multilineComments": true,
