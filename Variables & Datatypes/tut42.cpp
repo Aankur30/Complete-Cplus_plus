@@ -17,7 +17,7 @@ int main()
     cout << "sizeof long double : " << sizeof(long double) << endl;
 
     // Precision
-    cout << setprecision(20);                   // Control the precision from std::cout.
+    cout << setprecision(5);                   // Control the precision from std::cout.
     cout << "number1 is : " << number1 << endl; // 7 digits
     cout << "number2 is : " << number2 << endl; // 15'ish digits
     cout << "number3 is : " << number3 << endl; // 15+ digits
@@ -54,13 +54,13 @@ int main()
     double number12{}; // Initialized to 0
 
     // Infinity
-    double result{number10 / number11};
+    double result{number10 / number11};//inf is denoted as infinity in c++
 
     cout << number10 << "/" << number11 << "  yields " << result << endl;
     cout << result << " + " << number10 << " yields " << result + number10 << endl;
 
     // NaN
-    result = number11 / number12;
+    result = number11 / number12;//indterminate form hence gives nan not a number
 
     cout << number11 << "/" << number12 << " = " << result << endl;
 
